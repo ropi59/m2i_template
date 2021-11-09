@@ -46,41 +46,236 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////// */
+/* menu en haut */
+.interface{
+    z-index: 2;
+}
+/* mise en page du logo avec le fond rouge */
 .logo{
     width: 100px; height: 100px;
     background-color: #F83131;
-    margin: 20px 50px;
-
+    margin: 10px 50px;
+    transform: scale(70%);
 }
 
 .slogan{
     color: grey;
     font: bold;
-    font-size: 30px;
-    align-items: center;
+    font-family: Graphik, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 40px 10px;
+    font-weight: bolder;
 }
 
+/* bandeau menu */
 .menu{
     width: 100vw; height: 120px;
-    background-color: gold;
+    background-color: white;
     display: flex;
-    justify-content: flex-end;
 }
 
+/* liste des champs du menu */
 .navigation{
     display: flex;
     color: grey;
-    font: bold;
+    font: bolder;
+    font-size: 15px;
+    margin: 50px;  
     
 }
 
-.nav-menu{
+/* mise en forme des champs du menu */
+a:link{
     color: grey;
-    font: bold;
-    font-size: 20px;
+    font: bolder;
+    text-decoration:none; 
+    font-family: Graphik, Arial, Helvetica, sans-serif;
+    margin: 10px;
+    font-size: 14px;
+    font-weight: bolder;
     align-items: right;
 }
 
+
 .video_container{
-    width: 100vw; height: 700px;
+    width: 100vw;
+    z-index: 5;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+}
+
+
+.video_container > div:nth-child(1) {
+    position: relative;
+    z-index: 2;
+    font-size: 7em;
+    font-weight: bold;
+    color: #FFF;
+
+    
+}
+
+.phrase-intro{
+    margin-top: 200px;
+    color: white;
+    font-family: Graphik, Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 25px;
+    text-align: center;
+    
+}
+.intro-search{
+    color: white;
+    font-family: Graphik, Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.search-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-field{
+    width: 800px;
+    height: 60px;
+    background-color: inherit;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 50px;
+}
+
+.example{
+    margin: 5px;
+    color: white;
+    font-family: Graphik, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    justify-content: center;
+}
+
+.note{
+    color: white;
+    font-family: Graphik, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    
+}
+.logo-avis-verifies{
+    transform: scale(25%);
+    text-align: center;
+}
+
+.video_container > div:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+/* video */
+.video_container > div:nth-child(2) > video {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* overlay -> filtre coloré au dessus de la vidéo */
+.video_container > div:nth-child(2) > .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: -moz-linear-gradient(113deg, rgba(255,0,0,0.7) 0%, rgba(0,5,120,0.7) 70%);
+    background: -webkit-linear-gradient(
+113deg, rgba(255,0,0,0.7) 0%,rgba(0,5,120,0.7) 70%);
+    background: linear-gradient(
+113deg, rgba(255,0,0,0.7) 0%,rgba(0,5,120,0.7) 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccff0000', endColorstr='#85000578',GradientType=1 );
+    z-index: 2;
+    opacity: .7;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.discover{
+    padding: 50px;
+    font-family: Graphik, Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    color: #F83131;
+    background-color: #F8F8F8;
+}
+
+
+.div-container-discover{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #F8F8F8;
+}
+
+.tuile{
+    margin: 5px;
+    padding: 15px;
+    width: 250px;
+    height: 250px;
+    background-color:white;
+    
+}
+
+.tuiles-title{
+    font-family: Graphik, Arial, Helvetica, sans-serif;
+    color:black;
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration:none;
+    margin-bottom: 20px;
+}
+
+.tuiles-pic{
+    width: 240px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.finance{
+    padding-top: 50px;
+    font-family: Graphik, Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+    background-color:grey;
+}
+
+.finance-subtitle{
+    padding: 10px;
+    font-family: Graphik, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    background-color:grey;
+}
+
+.div-container-finance{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: grey;
+}
+
+.tuiles-subtitle{
+    color: #F83131;
 }
