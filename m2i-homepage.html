@@ -1,46 +1,80 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <!-- partie non visible par l'utilisateur -->
-        <!-- encodage du code -->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- titre de la page -->
-        <title>M2i - Formations</title>
-        <meta name="description" content="description du site">
-        <meta name="keyword" content="des mots clés">
-        <!-- lien vers le fichier de css -->
-        <link rel="stylesheet" href="./.assets/css/style.css">
-    </head>
 
-    <body>
-        <header>
-            <div class="interface" >
-                <div class="menu">
-                    <div class="logo"><img src="https://www.m2iformation.fr/images/logo.svg"><a id="logo" href="https://www.m2iformation.fr/"></a></div>
-                    <div><p class="slogan">Développez vos talents <br> Certifiez vos compétences</p></div>
-                    <div>
-                        <nav>
-                            <ul class="navigation">
-                                <li class="nav-menu"><a href="lien" >FORMATIONS </a> </li>
-                                <li class="nav-menu"><a href="lien" >DIPLÔMES ET CERTIFICATIONS</a> </li>
-                                <li class="nav-menu"><a href="lien" >MODALITES</a> </li>
-                                <li class="nav-menu"><a href="lien" >FINANCEMENTS</a> </li>
-                                <li class="nav-menu"><a href="lien" >CPF</a> </li>
-                                <li class="nav-menu"><a href="lien" >POE</a> </li>
-                                <li class="nav-menu"><a href="lien" >FNE</a> </li>
-                            </ul>
-                        </nav>
-                    </div>
+<head>
+    <!-- partie non visible par l'utilisateur -->
+    <!-- encodage du code -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titre de la page -->
+    <title>M2i - Formations</title>
+    <meta name="description" content="description du site">
+    <meta name="keyword" content="des mots clés">
+    <!-- lien vers le fichier de css -->
+    <link rel="stylesheet" href="./.assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="interface">
+            <div class="menu">
+                <div class="logo">
+                    <a id="logo" href="https://www.m2iformation.fr/">
+                        <img src="https://www.m2iformation.fr/images/logo.svg" alt="M2i Formations">
+                    </a>
+                </div>
+                <div>
+                    <p class="slogan">Développez vos talents <br> Certifiez vos compétences</p>
+                </div>
+                <div>
+                    <nav>
+                        <ul class="navigation">
+                            <li class="nav-menu"><a href="lien"><span>FORMATIONS</span></a> </li>
+                            <li class="nav-menu"><a href="lien"><span>DIPLÔMES ET CERTIFICATIONS</span></a> </li>
+                            <li class="nav-menu"><a href="lien"><span>MODALITES</span></a> </li>
+                            <li class="nav-menu"><a href="lien"><span>FINANCEMENTS</span></a> </li>
+                            <li class="nav-menu"><a href="lien"><span>CPF</span></a> </li>
+                            <li class="nav-menu"><a href="lien"><span>POE</span></a> </li>
+                            <li class="nav-menu"><a href="lien"><span>FNE</span></a> </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-        
-            <div class="video_container">
-                <video autoplay loop muted"> 
+        </div>
+        <div class="video_container">
+            <div>
+                <div class="div-phrase-intro">
+                    <p class="phrase-intro">Bienvenue chez le leader de la formation IT, Digital et Management en France</p>
+                </div>
+                <div class="div-intro-search">
+                    <h1 class="intro-search">Trouvez votre formation</h1>
+                </div>
+                <div class="search-input">
+                    <div>
+                        <input class="search-field" type="text">
+                        <p class="example">Ex. : Excel, Word, Photoshop, Java, Agile...</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="note">4,6/5</div>
+                    <div class="logo-avis-verifies"><a id="avis-verifies" href="https://www.avis-verifies.com/avis-clients/m2iformation.fr">
+                        <img src="https://www.m2iformation.fr/images/logo-avis-verifies.png" alt="avis vérifiés">
+                    </a></div>
+                </div>
+            </div>
+            <div>
+                <video autoplay muted loop>
                     <source src="https://www.m2iformation.fr/video/home.mp4?v=2" type="video/mp4">
                 </video>
+                <div class="overlay"></div>
             </div>
-        </header>
+        </div>
         
-    </body>
+    </header>
+    <section>
+        <div><p class="discover">Découvrez nos formations 2022 disponibles</br> en présentiel ou à distance</p></div>
+    </section>
+
+    
+</body>
