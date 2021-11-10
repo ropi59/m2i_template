@@ -76,18 +76,15 @@ table {
     display: flex;
 }
 
-/* liste des champs du menu */
+/* positionnement de la liste du menu */
 .navigation{
     display: flex;
-    color: grey;
-    font: bolder;
-    font-size: 15px;
     margin: 50px;  
     
 }
 
 /* mise en forme des champs du menu */
-a:link{
+.lien-menu{
     color: grey;
     font: bolder;
     text-decoration:none; 
@@ -224,6 +221,7 @@ a:link{
     flex-direction: row;
     justify-content: center;
     background-color: #F8F8F8;
+    padding-bottom: 75px;
 }
 
 .tuile{
@@ -234,6 +232,12 @@ a:link{
     background-color:white;
     
 }
+
+.tuile:hover{
+    background-color: rgb(216, 214, 214);
+    /* animation hover a faire */
+}
+
 
 .tuiles-title{
     font-family: Graphik, Arial, Helvetica, sans-serif;
@@ -257,7 +261,7 @@ a:link{
     font-weight: bolder;
     text-align: center;
     color: black;
-    background-color:grey;
+    background-color:#EDEDED;
 }
 
 .finance-subtitle{
@@ -266,16 +270,93 @@ a:link{
     font-size: 20px;
     text-align: center;
     color: black;
-    background-color:grey;
+    background-color:#EDEDED;
 }
 
 .div-container-finance{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: grey;
+    background-color: #EDEDED;
+    padding-bottom: 75px;
 }
 
 .tuiles-subtitle{
+    font-family: Graphik, Arial, Helvetica, sans-serif;
     color: #F83131;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.div-container-transformation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #F8F8F8;
+}
+
+.transformation-pic{
+    margin-top: 100px;
+    width: 500px;
+    /* transform: scale(60%); */
+}
+
+.transformation{
+    width: 400px;
+}
+
+.transformation-subtitle{
+    font-family: Graphik, Arial, Helvetica, sans-serif;
+    color: #F83131;
+    font-weight: bolder;
+    margin-top: 100px;
+
+}
+
+.keyword{  
+    margin: 3px 3px 10px 3px;
+    font-family: Graphik, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bolder;
+    color: #F83131;
+    text-decoration:none; 
+}
+
+.tags{
+    margin: 1px 1px 3px 1px;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 30px;
+    border-color: #F83131;
+}
+
+.transformation-title{
+    font-family: Graphik, Arial, Helvetica, sans-serif;
+    color:black;
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration:none;
+    margin: 10px 0px;
+}
+
+.paragraph{
+    font-family: Graphik, Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: grey;
+    margin: 17px 0px;
+    line-height: 30px;
+}
+
+.en-savoir-plus{
+    background-color: #F83131;
+    font-family: Graphik, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: white;
+    text-decoration:none;
+    margin: 30px 0px;
+    padding: 10px;
+}
+
+.en-savoir-plus:hover{
+    background-color: rgba(0,5,120,0.7);
 }
