@@ -387,7 +387,7 @@ table {
     margin: 5px;
     padding: 15px;
     width: 40vw;
-    height: 550px;
+    height: 600px;
     background-color:white;
     
 }
@@ -439,5 +439,170 @@ table {
     text-decoration: none;
     text-align: center;
     padding-top: 250px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.div-container-universe{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #F8F8F8;
+
+}
+
+.universe-pic{
+    width: 50px;
+}
+
+.universe-column{
+    margin: 5px;
+    padding: 15px;
+    width: 15vw;
+    height: 400px;   
+}
+
+.universe-subtitle{
+    margin: 10px 0px;
+    font-family: Graphik, Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.universe-paragraph{
+    margin: 10px 0px;
+    font-family: Graphik, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color:grey;
+    margin-bottom: 50px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.div-container-exclusivity{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #F8F8F8;
+}
+
+.grande-tuilex3{
+    margin: 5px;
+    padding: 15px;
+    width: 25vw;
+    height: 430px;
+    background-color:white;
     
+}
+
+.grande-tuilex3:hover{
+    background-color: rgb(216, 214, 214);
+    /* animation hover a faire */
+}
+
+.grande-tuilesx3-pic{
+    width: 24vw;
+}
+
+.plusx3{
+    margin-top: 5px;
+    background-color: #F83131;
+    height: 460px;
+    width: 8vw;
+
+}
+.plus:hoverx3{
+    background-color: rgba(0,5,120,0.7);
+}
+
+.symbol-plusx3{
+    font-family: Graphik, Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 210px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.phrase-add{
+    color: white;
+    font-family: Graphik, Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.contactez-nous{
+    background-color: #F83131;
+    font-family: Graphik, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    text-decoration:none;
+    margin: 5030px 0px;
+    padding: 30px;
+}
+
+.contactez-nous:hover{
+    background-color: rgba(0,5,120,0.7);
+}
+.add-container{
+    display: table-cell;
+    vertical-align: middle;
+    width: 80vm;
+    height: 50px;
+    z-index: 5;
+    position: relative;
+    justify-content: center;
+}
+
+.add-container > div:nth-child(2) > .overlay-add {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: -moz-linear-gradient(113deg, rgba(255,0,0,0.7) 0%, rgba(0,5,120,0.7) 70%);
+    background: -webkit-linear-gradient(
+113deg, rgba(255,0,0,0.7) 0%,rgba(0,5,120,0.7) 70%);
+    background: linear-gradient(
+113deg, rgba(255,0,0,0.7) 0%,rgba(0,5,120,0.7) 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccff0000', endColorstr='#85000578',GradientType=1 );
+    z-index: 2;
+    opacity: .7;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.partners{
+    padding: 50px;
+    font-family: Graphik, Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+    background-color: #F8F8F8;
+}
+
+
+.div-container-partners{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #F8F8F8;
+    padding-bottom: 75px;
+}
+
+.mini-tuile{
+    margin: 5px;
+    padding: 15px;
+    width: 100px;
+    height: 100px;
+    background-color: #F8F8F8; 
+}
+
+.mini-tuiles-pic{
+    width: 100%;
 }
