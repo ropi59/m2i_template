@@ -82,7 +82,6 @@ table {
 .navigation{
     display: flex;
     margin: 50px;  
-    
 }
 
 /* mise en forme des champs du menu */
@@ -113,8 +112,6 @@ table {
     font-size: 7em;
     font-weight: bold;
     color: #FFF;
-
-    
 }
 
 .phrase-intro{
@@ -123,9 +120,9 @@ table {
     font-family: Graphik, Arial, Helvetica, sans-serif;
     font-weight: lighter;
     font-size: 25px;
-    text-align: center;
-    
+    text-align: center; 
 }
+
 .intro-search{
     color: white;
     font-family: Graphik, Arial, Helvetica, sans-serif;
@@ -165,8 +162,8 @@ table {
     font-weight: bolder;
     display: flex;
     justify-content: center;
-    
 }
+
 .logo-avis-verifies{
     transform: scale(25%);
     text-align: center;
@@ -232,14 +229,12 @@ table {
     width: 250px;
     height: 250px;
     background-color:white;
-    
 }
 
 .tuile:hover{
     background-color: rgb(216, 214, 214);
     /* animation hover a faire */
 }
-
 
 .tuiles-title{
     font-family: Graphik, Arial, Helvetica, sans-serif;
@@ -312,7 +307,6 @@ table {
     color: #F83131;
     font-weight: bolder;
     margin-top: 100px;
-
 }
 
 .keyword{  
@@ -386,10 +380,9 @@ table {
 .grande-tuile{
     margin: 5px;
     padding: 15px;
-    width: 40vw;
+    width: 42vw;
     height: 600px;
     background-color:white;
-    
 }
 
 .grande-tuile:hover{
@@ -408,7 +401,7 @@ table {
 }
 
 .grande-tuiles-pic{
-    width: 39vw;
+    width: 41vw;
 }
 
 .date{
@@ -423,10 +416,10 @@ table {
 .plus{
     margin-top: 5px;
     background-color: #F83131;
-    height: 580px;
+    height: 630px;
     width: 8vw;
-
 }
+
 .plus:hover{
     background-color: rgba(0,5,120,0.7);
 }
@@ -448,7 +441,6 @@ table {
     flex-direction: row;
     justify-content: center;
     background-color: #F8F8F8;
-
 }
 
 .universe-pic{
@@ -488,10 +480,9 @@ table {
 .grande-tuilex3{
     margin: 5px;
     padding: 15px;
-    width: 25vw;
+    width: 28vw;
     height: 430px;
     background-color:white;
-    
 }
 
 .grande-tuilex3:hover{
@@ -500,7 +491,7 @@ table {
 }
 
 .grande-tuilesx3-pic{
-    width: 24vw;
+    width: 27vw;
 }
 
 .plusx3{
@@ -508,8 +499,8 @@ table {
     background-color: #F83131;
     height: 460px;
     width: 8vw;
-
 }
+
 .plus:hoverx3{
     background-color: rgba(0,5,120,0.7);
 }
@@ -528,39 +519,38 @@ table {
 
 
 .phrase-add{
+    padding: 50px 70px;
     color: white;
     font-family: Graphik, Arial, Helvetica, sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bolder;
-    text-align: center;
+    z-index: 5;
 }
 
 .contactez-nous{
-    background-color: #F83131;
-    font-family: Graphik, Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: white;
-    text-decoration:none;
-    margin: 5030px 0px;
+    text-decoration: none;
+    margin: 50px 0px 0;
     padding: 30px;
+    z-index: 5;
+    display: inline-block;
 }
 
 .contactez-nous:hover{
     background-color: rgba(0,5,120,0.7);
 }
 .add-container{
-    display: table-cell;
-    vertical-align: middle;
-    width: 80vm;
-    height: 50px;
-    z-index: 5;
+    height: 80%;
     position: relative;
-    justify-content: center;
+    overflow: hidden;
+    width: 100vw;
 }
 
-.add-container > div:nth-child(2) > .overlay-add {
+.overlay-add {
     position: absolute;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background: -moz-linear-gradient(113deg, rgba(255,0,0,0.7) 0%, rgba(0,5,120,0.7) 70%);
@@ -571,6 +561,14 @@ table {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccff0000', endColorstr='#85000578',GradientType=1 );
     z-index: 2;
     opacity: .7;
+}
+.add{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -605,4 +603,53 @@ table {
 
 .mini-tuiles-pic{
     width: 100%;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.div-container-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #050c41;
+}
+
+.footer-column{
+    margin: 5px;
+    padding: 50px;
+    width: 15vw;
+    height: 400px;   
+}
+
+.footer-subtitle{
+    margin: 10px 0px;
+    font-family: Graphik, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.footer-paragraph{
+    margin: 10px 0px;
+    font-family: Graphik, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color:white;
+    margin-bottom: 50px;
+}
+
+.telephone{
+    margin: 10px 0px;
+    font-family: Graphik, Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.footer-link{
+    color: #dadada;
+    font-family: Graphik, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.footer-link:hover{
+    color: white;
+
 }
